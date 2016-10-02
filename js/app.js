@@ -5,9 +5,6 @@
    * This is the main module for our appliation
    */
   var appModule =  angular.module('app', ['ngComponentRouter', 'movies', 'homeComponent', 'about'])
-    .config(function($locationProvider) {
-	    $locationProvider.html5Mode(true);
-	  })
 	.value('$routerRootComponent', 'app')
     .component('app', {
 	  templateUrl: '/js/components/appComponent.html',
